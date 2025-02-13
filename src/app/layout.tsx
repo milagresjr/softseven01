@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Script from 'next/script';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -57,17 +58,17 @@ export default function RootLayout({
         <div id="preloade"></div>
 
         {/* Vendor JS Files */}
-        <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="/assets/vendor/php-email-form/validate.js"></script>
-        <script src="/assets/vendor/aos/aos.js"></script>
-        <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
-        <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
-        <script src="/assets/vendor/waypoints/noframework.waypoints.js"></script>
-        <script src="/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-        <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+        <Script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" strategy="lazyOnload" />
+        <Script src="/assets/vendor/php-email-form/validate.js" strategy="lazyOnload" />
+        <Script src="/assets/vendor/aos/aos.js" strategy="lazyOnload" />
+        <Script src="/assets/vendor/glightbox/js/glightbox.min.js" strategy="lazyOnload" />
+        <Script src="/assets/vendor/swiper/swiper-bundle.min.js" strategy="lazyOnload" />
+        <Script src="/assets/vendor/waypoints/noframework.waypoints.js" strategy="lazyOnload" />
+        <Script src="/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js" strategy="lazyOnload" />
+        <Script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js" strategy="lazyOnload" />
 
         {/* Template Main JS File */}
-        <script src="/assets/js/main.js"></script>
+        <Script src="/assets/js/main.js" strategy="lazyOnload" />
 
       </body>
     </html>

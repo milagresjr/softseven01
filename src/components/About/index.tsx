@@ -1,3 +1,4 @@
+import Image from "next/image";
 
 
 export default function About() {
@@ -16,7 +17,7 @@ export default function About() {
                 <div className="row gy-4">
 
                     <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                       <img src="/assets/img/about-us.png" alt="Sobre-nos" className="w-[400px] h-[400px]" />
+                       <Image src="/assets/img/about-us.png" alt="Sobre-nos" className="w-[400px] h-[400px]" />
                     </div>
 
                     <div className="col-lg-6" data-aos="fade-up" data-aos-delay="200">

@@ -1,5 +1,6 @@
 'use client'
 
+import Image from "next/image";
 import { Navigation, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -32,14 +33,14 @@ export default function Clients() {
             1024: { slidesPerView: 4 }, // Em telas grandes, mostra 4 slides
           }}
         >
-          <SwiperSlide><img src="/assets/img/clients/client-1.png" className="img-fluid w-[200px]" alt="Cliente 1" /></SwiperSlide>
-          <SwiperSlide><img src="/assets/img/clients/client-2.png" className="img-fluid w-[200px]" alt="Cliente 2" /></SwiperSlide>
-          <SwiperSlide><img src="/assets/img/clients/client-3.png" className="img-fluid w-[200px]" alt="Cliente 3" /></SwiperSlide>
-          <SwiperSlide><img src="/assets/img/clients/client-4.png" className="img-fluid w-[200px]" alt="Cliente 4" /></SwiperSlide>
-          <SwiperSlide><img src="/assets/img/clients/client-5.png" className="img-fluid w-[200px]" alt="Cliente 5" /></SwiperSlide>
-          <SwiperSlide><img src="/assets/img/clients/client-6.png" className="img-fluid w-[200px]" alt="Cliente 6" /></SwiperSlide>
-          <SwiperSlide><img src="/assets/img/clients/client-7.png" className="img-fluid w-[200px]" alt="Cliente 7" /></SwiperSlide>
-          <SwiperSlide><img src="/assets/img/clients/client-8.png" className="img-fluid w-[200px]" alt="Cliente 8" /></SwiperSlide>
+          <SwiperSlide><Image src="/assets/img/clients/client-1.png" className="img-fluid w-[200px]" alt="Cliente 1" /></SwiperSlide>
+          <SwiperSlide><Image src="/assets/img/clients/client-2.png" className="img-fluid w-[200px]" alt="Cliente 2" /></SwiperSlide>
+          <SwiperSlide><Image src="/assets/img/clients/client-3.png" className="img-fluid w-[200px]" alt="Cliente 3" /></SwiperSlide>
+          <SwiperSlide><Image src="/assets/img/clients/client-4.png" className="img-fluid w-[200px]" alt="Cliente 4" /></SwiperSlide>
+          <SwiperSlide><Image src="/assets/img/clients/client-5.png" className="img-fluid w-[200px]" alt="Cliente 5" /></SwiperSlide>
+          <SwiperSlide><Image src="/assets/img/clients/client-6.png" className="img-fluid w-[200px]" alt="Cliente 6" /></SwiperSlide>
+          <SwiperSlide><Image src="/assets/img/clients/client-7.png" className="img-fluid w-[200px]" alt="Cliente 7" /></SwiperSlide>
+          <SwiperSlide><Image src="/assets/img/clients/client-8.png" className="img-fluid w-[200px]" alt="Cliente 8" /></SwiperSlide>
         </Swiper>
       </div>
 
