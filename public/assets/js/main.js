@@ -91,7 +91,7 @@
 
   /**
    * Animation on scroll function and init
-   */
+  
   function aosInit() {
     AOS.init({
       duration: 600,
@@ -101,7 +101,7 @@
     });
   }
   window.addEventListener('load', aosInit);
-
+ */
   /**
    * Initiate glightbox
    */

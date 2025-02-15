@@ -4,6 +4,9 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Script from "next/script";
+import AOSInitializer from "@/components/AOSInitializer";
+import "bootstrap/dist/css/bootstrap.min.css";
+import BootstrapInitializer from "@/components/BootstrapInitializer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -55,14 +58,8 @@ export default function RootLayout({
         <div id=""></div>
 
         {/* Vendor JS Files */}
-        <Script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" strategy="afterInteractive" />
-        <Script src="/assets/vendor/aos/aos.js" strategy="afterInteractive" />
-        <Script src="/assets/vendor/glightbox/js/glightbox.min.js" strategy="afterInteractive" />
-        <Script src="/assets/vendor/swiper/swiper-bundle.min.js" strategy="afterInteractive" />
-        <Script src="/assets/vendor/waypoints/noframework.waypoints.js" strategy="afterInteractive" />
-        <Script src="/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js" strategy="afterInteractive" />
-        <Script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js" strategy="afterInteractive" />
-
+        <AOSInitializer />
+        <BootstrapInitializer />
         {/* Template Main JS File */}
         <Script src="/assets/js/main.js" strategy="beforeInteractive" />
       </body>
