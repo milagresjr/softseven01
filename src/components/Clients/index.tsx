@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 export default function Clients() {
   return (
 
-    <section id="clients" className="clients section light-background">
+    <section id="clients" className="clients section">
 
       <div className="bg-white pt-5">
 

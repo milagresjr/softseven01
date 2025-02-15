@@ -55,10 +55,10 @@ export default function Footer() {
                         <div className="col-lg-2 col-md-3 footer-links">
                             <h4>Nossos Serviços</h4>
                             <ul>
-                                <li><i className="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
-                                <li><i className="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
-                                <li><i className="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
-                                <li><i className="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
+                                <li><i className="bi bi-chevron-right"></i> <a href="#">Suporte a Sistemas</a></li>
+                                <li><i className="bi bi-chevron-right"></i> <a href="#">Desenvolvimento Web</a></li>
+                                <li><i className="bi bi-chevron-right"></i> <a href="#">Hardware</a></li>
+                                <li><i className="bi bi-chevron-right"></i> <a href="#">Equipamentos & Consumíveis</a></li>
                             </ul>
                         </div>
 
@@ -77,11 +77,8 @@ export default function Footer() {
                 </div>
 
                 <div className="container copyright text-center mt-4">
-                    <p>© <span>Copyright</span> <strong className="px-1 sitename">Arsha</strong> <span>All Rights Reserved</span></p>
-                    <div className="credits">
-                        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-                    </div>
-                </div>
+                    <p>© <span>Copyright</span> <strong className="px-1 sitename">Softseven</strong> <span>Todos Direito Reservado</span></p>
+                  </div>
             </footer>
 
             {/* <!-- Scroll Top --> */}

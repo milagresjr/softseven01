@@ -1,9 +1,37 @@
-import Image from "next/image";
+'use client';
 
+import Image from "next/image";
+import { useEffect, useState } from "react";
 
 export default function Header() {
+
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <header id="header" className="header d-flex align-items-center fixed-top">
+    <header
+      id="header"
+      className="header d-flex align-items-center fixed-top"
+      style={{
+        backgroundColor: isScrolled ? '' : 'transparent',
+        zIndex: 1000,
+      }}
+    >
       <div className="container-fluid container-xl position-relative d-flex align-items-center">
 
         <a href="index.html" className="logo d-flex align-items-center me-auto">
@@ -19,7 +47,7 @@ export default function Header() {
 
         <nav id="navmenu" className="navmenu">
           <ul>
-            <li><a href="#hero" className="active">Home</a></li>
+            <li><a href="#hero">Home</a></li>
             <li><a href="#about">quem somos</a></li>
             <li><a href="#services">Serviços</a></li>
             <li><a href="#clients">Clientes</a></li>
