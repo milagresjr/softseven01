@@ -1,11 +1,13 @@
+'use client';
 
+import Image from "next/image";
 
 export default function CallToAction() {
     return(
        
         <section id="call-to-action" className="call-to-action section dark-background">
     
-          <img src="assets/img/cta-bg.jpg" alt="" />
+          <Image src="/assets/img/cta-bg.jpg" alt="" width={200} height={200} />
     
           <div className="container">
     
