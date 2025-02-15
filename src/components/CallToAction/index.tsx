@@ -1,9 +1,6 @@
 'use client';
-<<<<<<< HEAD
 
 import Image from "next/image";
-=======
->>>>>>> 28dbe93e19e1066f98ff4319a7f4ebdd2a9d730f
 
 export default function CallToAction() {
     return(
